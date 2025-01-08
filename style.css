@@ -219,6 +219,7 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+    color: #0a0a0a;
 }
 .about .about-content .left img{
     height: 400px;
@@ -322,7 +323,7 @@ section .title::after{
 .skills .skills-content .left a{
     display: inline-block;
     background: blue;
-    color: #fff;
+    color: #040404;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -416,59 +417,72 @@ section .title::after{
 
 
 /* projects section styling */
-.projects, .teams{
-    color:#fff;
-    background: #111;
-}
-.projects .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.projects .title::after,
-.teams .title::after{
-    background: #111;
-    content: "My Work";
+.projects {
+    background-color: #111;
+    padding: 100px 0;
+    color: #fff;
 }
 
-.projects .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.title {
     text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    position: relative;
 }
 
-.projects .carousel .card:hover {
-    background: blue;
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
 }
 
-.projects .carousel .card .box {
+.content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #222;
+    width: 300px;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
-.projects .carousel .card .text {
+.icon {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.text {
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin-bottom: 10px;
 }
 
-.projects .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* Adjust any specific styles for project images */
-    transition: all 0.3s ease;
+p {
+    font-size: 18px;
+    color: #fff;
 }
 
-.projects .carousel .card:hover img {
-    /* Adjust border color on hover */
-    border-color: #fff;
+a {
+    color: blue;
+    text-decoration: none;
 }
 
 /* contact section styling */
