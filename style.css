@@ -172,16 +172,22 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    text-align: center;      /* Center text horizontally */
 }
 
 .home .max-width {
     width: 100%;
+    max-width: 1200px; /* Optional: adjust based on your content size */
+    padding: 0 20px;
+}
+
+.home .home-content {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
 .home .home-content .text-1 {
@@ -191,17 +197,7 @@ section .title::after{
 .home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: blue;
-    font-weight: 500;
+    margin-top: 10px; /* Adds space between text-1 and text-2 */
 }
 
 .home .home-content a {
@@ -221,7 +217,6 @@ section .title::after{
     color: blue;
     background: none;
 }
-
 
 /* about section styling */
 .about .title::after{
