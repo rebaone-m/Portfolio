@@ -415,70 +415,60 @@ section .title::after{
 }
 
 
-/* Projects Section Styling */
-.projects {
-    padding: 100px 0;
-    background: #f9f9f9;
+/* projects section styling */
+.projects, .teams{
+    color:#fff;
+    background: #111;
+}
+.projects .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.projects .title::after,
+.teams .title::after{
+    background: #111;
+    content: "My Work";
 }
 
-.projects .max-width {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.projects .title {
-    font-size: 36px;
-    font-weight: 600;
+.projects .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
     text-align: center;
-    margin-bottom: 60px;
-    color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.projects .content {
+.projects .carousel .card:hover {
+    background: blue;
+}
+
+.projects .carousel .card .box {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.projects .card {
-    background: #050505;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    flex: 1;
-    min-width: 300px;
-    max-width: 30%;
-    transition: transform 0.3s, box-shadow 0.3s;
+.projects .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
-.projects .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 10px rgb(247, 246, 246);
+.projects .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Adjust any specific styles for project images */
+    transition: all 0.3s ease;
 }
 
-.projects .box {
-    padding: 20px;
-    text-align: center;
-}
-
-.projects .box .icon {
-    font-size: 50px;
-    color: #1a08df;
-    margin-bottom: 20px;
-}
-
-.projects .box .text {
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.projects .box p {
-    font-size: 16px;
-    color: #f9f9f9;
-    line-height: 1.6;
+.projects .carousel .card:hover img {
+    /* Adjust border color on hover */
+    border-color: #fff;
 }
 
 /* contact section styling */
