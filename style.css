@@ -163,7 +163,7 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+.home {
     display: flex;
     background: url("pexels-timson-foox-776012-2182863.jpg") no-repeat center;
     height: 100vh;
@@ -172,31 +172,39 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
-.home .max-width{
-  width: 100%;
-  display: flex;
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.home .max-width .row{
-  margin-right: 0;
-}
-.home .home-content .text-1{
+
+.home .home-content .text-1 {
     font-size: 27px;
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+
+.home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+
+.home .home-content .text-3 span {
     color: blue;
     font-weight: 500;
 }
-.home .home-content a{
+
+.home .home-content a {
     display: inline-block;
     background: blue;
     color: #fff;
@@ -208,10 +216,12 @@ section .title::after{
     border: 2px solid blue;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+
+.home .home-content a:hover {
     color: blue;
     background: none;
 }
+
 
 /* about section styling */
 .about .title::after{
